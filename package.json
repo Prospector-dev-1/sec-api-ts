@@ -1,0 +1,68 @@
+{
+  "name": "sec-api-ts",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for SEC API (sec-api.io) - SEC EDGAR Filings, XBRL, Form 10-K, 10-Q, 8-K, 13F, Form ADV, Insider Trading, and Datasets",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/index.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEC-API-io/sec-api-node.git"
+  },
+  "keywords": [
+    "sec-api",
+    "sec-api-ts",
+    "sec.gov",
+    "EDGAR",
+    "API",
+    "Filings",
+    "XBRL to JSON",
+    "XBRL",
+    "Financial statements",
+    "Income statement",
+    "Balance sheet",
+    "Cash flow statement",
+    "real-time",
+    "JSON Filings",
+    "Institutional ownership",
+    "10-K",
+    "10-Q",
+    "8-K",
+    "13-F",
+    "13-D",
+    "13-G",
+    "TypeScript",
+    "SDK"
+  ],
+  "author": "SEC API",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}
